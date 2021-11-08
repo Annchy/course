@@ -1,5 +1,5 @@
 Preferences:
-	movie: Prestige
+  movie: Prestige
   food: potatoes
   season: summer
   country: Japan
