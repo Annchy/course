@@ -1,0 +1,84 @@
+Homework 05.11.2021 GitHub branches (group 24)
+
+---
+
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bug Reports
+- SQL
+- Charles
+- Mobile testing
+
+git branch name_branch 		- создать ветку name_branch
+git checkout -b name_branch 	- создать ветку и переключиться на неё
+git branch 			- просмотр всех локальных веток
+
+---
+
+2. Запушить все ветки на внешний репозиторий:
+
+git push -u origin name_branch 	- запушить локальную ветку name_branch и 
+				  сделать её отслеживаемой (-u)
+git branch -vv  		- посмотреть отслеживаемые ветки
+
+---
+
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта:
+
+git checkout bug_reports	- переключиться на ветку bug_reports
+nano bug_report.txt		- создать и отредактировать файл bug_report.txt
+ctrl+s -> ctrl+x		- сохранить изменения и выйти из nano
+
+---
+
+4. Запушить структуру багрепорта на внешний репозиторий:
+
+git add bug_report.txt 		- добавить файл bug_report.txt к отслеживанию
+git commit -m "add file"	- добавить комментарий
+git push			- загрузить изменения на внешний репозиторий
+
+---
+
+5. Вмержить ветку Bug Reports в Main:
+
+git checkout main		- переключиться на ветку main
+git merge bug_reports		- вмержить ветку bug_reports в main
+
+---
+
+6. Запушить Main на внешний репозиторий:
+
+git push			- загрузить изменения на внешний репозиторий
+
+---
+
+7. В ветке CheckLists набросать структуру чек листа:
+
+git checkout checklists		- переключиться на ветку checklists 
+nano check-list.txt		- создать и отредактировать файл check-list.txt
+ctrl+s -> ctrl+x		- сохранить изменения и выйти из nano
+
+---
+
+8. Запушить структуру на внешний репозиторий:
+
+git add check-list.txt		- добавить файл check-list.txt к отслеживанию
+git commit -m "add file"	- добавить комментарий
+git push			- загрузить изменения на внешний репозиторий
+
+---
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в Main:
+
+Нажать "Compare & pull request" -> добавить комментарий -> нажать "Create pull request" -> нажать "Merge pull request" -> нажать "Confirm merge"
+
+---
+
+10. Синхронизировать Внешнюю и Локальную ветки Main:
+
+git checkout main		- переключиться на ветку main
+git pull			- загрузить изменения с внешнего репозитория
+
+---
