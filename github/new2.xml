@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<Info>
+	<name>Ann</name>
+	<age>23</age>
+	<pets>no pets</pets>
+	<salary>1000$</salary>
+	<Preferences>
+		<movie>Prestige</movie>
+		<food>potatoes</food>
+		<season>summer</season>
+		<country>Japan</country>
+	</Preferences>
+</Info>

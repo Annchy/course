@@ -1,0 +1,12 @@
+{
+	"name":"Ann",
+	"age":23,
+	"pets":"no pets",
+	"salary":"1000$",
+	"preferences": {
+		"movie":"Prestige",
+		"food":"potatoes",
+		"season":"summer",
+		"country":"Japan",
+	}
+}
