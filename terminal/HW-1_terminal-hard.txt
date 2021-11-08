@@ -1,0 +1,79 @@
+echo 'Homework 29.10.2021 Terminal, hard task (group 24)'
+
+echo 'Первое ДЗ'
+echo 'Linux terminal (GitBash) commands'
+
+echo '1) Посмотреть где я: pwd'
+pwd
+
+echo '2) Создать папку: mkdir dir1'
+mkdir dir1
+
+echo '3) Зайти в папку: cd dir1'
+cd dir1
+
+echo '4) Создать 3 папки: mkdir d_1 d_2 d_3'
+mkdir d_1 d_2 d_3
+
+echo '5) Зайти в любую папку: cd d_1'
+cd d_1
+
+echo '6) Создать 5 файлов (3 txt, 2 json): touch file1.txt file2.txt file3.txt jfile1.json jfile2.json'
+touch file1.txt file2.txt file3.txt jfile1.json jfile2.json
+
+echo '7) Создать 3 папки: mkdir -p dir1/dir2/dir3'
+mkdir -p dir1/dir2/dir3
+
+echo '8) Вывести список содержимого папки: ls -ls'
+ls -ls
+
+echo '9) + открыть любой txt файл: nano file1.txt'
+echo > file1.txt
+
+echo '10) + написать туда что-нибудь, любой текст:'
+echo "- one string" >> file1.txt
+echo "- two string" >> file1.txt
+echo "- three string" >> file1.txt
+echo "- four string" >> file1.txt
+echo "- five string" >> file1.txt
+
+echo '11) + сохранить и выйти: ctrl+s -> ctrl+x'
+
+echo '12) Выйти из папки на уровень выше: cd ..'
+cd ..
+
+echo '13) Переместить любые 2 файла, которые вы создали, в любую другую папку: mv ./d_1/{file1.txt,jfile1.json} ./d_2/'
+mv ./d_1/{file1.txt,jfile1.json} ./d_2/
+
+echo '14) Скопировать любые 2 файла, которые вы создали, в любую другую папку: cp ./d_1/{file3.txt,jfile2.json} ./d_3/'
+cp ./d_1/{file3.txt,jfile2.json} ./d_3/
+
+echo '15) Найти файл по имени: find . -maxdepth 2 -iname "jfile*"'
+find . -maxdepth 2 -iname "jfile*"
+echo '#ищет файлы по имени (-iname) jfile на "глубине" 2-х директорий (-maxdepth 2)'
+
+echo '16) Просмотреть содержимое в реальном времени (команда grep) изучите как она работает: tail -n100 d_2/file1.txt'
+tail -n100 d_2/file1.txt
+echo '#выводит последние 100 строк файла (-n100) в режиме реального времени (-f)'
+trap : 2
+
+echo '17) Вывести несколько первых строк из текстового файла: head -3 d_2/file1.txt'
+head -3 d_2/file1.txt
+echo '#выводит три (-3) строки с начала файла'
+
+echo '18) Вывести несколько последних строк из текстового файла: tail -3 d_2/file1.txt'
+tail -3 d_2/file1.txt
+echo '#выводит три (-3) строки с конца файла'
+
+echo '19) Просмотреть содержимое длинного файла : less -K d_2/file1.txt'
+less -eKF d_2/file1.txt
+echo '#постранично выводит очень длинные файлы для выхода нужно нажать q'
+trap : 2
+
+echo '20) Вывести дату и время: date'
+date
+
+echo 'Задание *'
+echo 'Отправить http запрос на сервер http://162.55.220.72:5005/object_info_3?name=Vadim&age=32&salary=1000:'
+echo 'curl http://162.55.220.72:5005/object_info_3"?name=Nastya&age=23&salary=9000"'
+curl http://162.55.220.72:5005/object_info_3'?name=Nastya&age=23&salary=9000'
