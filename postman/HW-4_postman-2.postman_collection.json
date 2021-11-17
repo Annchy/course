@@ -194,7 +194,8 @@
 							"\r",
 							"// 4) проверить, что 2-й элемент массива salary больше 1-го и 0-го\r",
 							"pm.test(\"Test: salary_x3 > salary_x2 > salary\", function () {\r",
-							"    pm.expect(salary_x3 > salary_x2, salary_x3 > salary).to.be.true;\r",
+							"    pm.expect(salary_x3 > salary_x2).to.be.true;\r",
+							"    pm.expect(salary_x3 > salary).to.be.true;\r",
 							"});"
 						],
 						"type": "text/javascript"
