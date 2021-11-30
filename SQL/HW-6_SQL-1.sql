@@ -74,8 +74,8 @@ select * from students where id > 80 and id < 90;
 select * from students where id between 80 and 90; 
 
 -- 26. Вывести пользователей где password равен 12333, 1m313, 123313:
-select * from students where password = '12333' or password = '1m313' or password = '123313';  -- первый вариант
-select * from students where password in ('12333', '1m313', '123313');					 -- второй вариант
+select * from students where password = '12333' or password = '1m313' or password = '123313';   -- первый вариант
+select * from students where password in ('12333', '1m313', '123313');    -- второй вариант
 
 -- 27. Вывести пользователей где created_on равен 2020-10-03 00:00:00, 2021-05-19 00:00:00, 2021-03-26 00:00:00:
 select * from students where created_on in ('2020-10-03 00:00:00', '2021-05-19 00:00:00', '2021-03-26 00:00:00');
